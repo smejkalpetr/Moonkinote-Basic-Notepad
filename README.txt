@@ -1,3 +1,13 @@
+This is the first project I have ever done - 6/2019. The code is not very
+clean or nice at all, but I thought I would still include this project here.
+
+The point was to create a program that would use modules instead of all source
+code being in one file as well as stuff like polymorphism, working with files,
+generate documentation, etc.
+
+
+Original description:
+
 ===========================|| MOONKINOTE ||===========================
 | DESCRIPTION: Moonkinote is a system for keeping notes. This small  |
 | program offers creating notes of variable categories, exporting    |
