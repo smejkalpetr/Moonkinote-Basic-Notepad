@@ -1,0 +1,8 @@
+THIS IS A NOTE THAT IS GOING TO BE IMPORTED
+Importing Features:
+    - always is the std category
+    - can be renamed when being imported
+    - tags can be added
+
+After importing you can treat this note
+as if it was any other note of type std.
