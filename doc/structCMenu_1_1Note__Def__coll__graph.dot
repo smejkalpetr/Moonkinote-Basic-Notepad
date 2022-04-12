@@ -1,0 +1,7 @@
+digraph "CMenu::Note_Def"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CMenu::Note_Def\n|+ category_name\l+ note_name\l+ category_exists\l+ note_exists\l+ err_flag\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This struct holds information about a note (defines it by note name and category)...."];
+}

@@ -1,0 +1,12 @@
+digraph "CTextEditor::BackspaceKey"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CTextEditor::BackspaceKey",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Implementation of backspace key - if possible, deletes a char (left from cursor). Possibly moves one ..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CBuffer::DeleteLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCBuffer.html#a8ed07a589c4fe7d9f303fd9e6c687756",tooltip="Deletes a line in the buffer."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CWindow::MoveCursorUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#aa500236cf5b74e6c5525fc8318ddd29b",tooltip="Moves cursor upwards."];
+}

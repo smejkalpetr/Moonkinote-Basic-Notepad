@@ -1,0 +1,28 @@
+digraph "CTextEditor::RunEditor"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CTextEditor::RunEditor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Starts the editor and controls its process."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CTextEditor::readFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCTextEditor.html#a1c212f137b8ff26d56b0a72be986d407",tooltip="Reads a file and stores it in buffer."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CBuffer::AppendLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCBuffer.html#a780fbe80988813dc783dc6f68418ccb4",tooltip="Appens a line to the end of the buffer (vector lines)."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CWindow::RunWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a6837f9b8cf9f6fee8c2b85db27c67a85",tooltip="Starts the windows and initializes ncurses library."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CWindow::InitWindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a3f029a891c13c01dc3568e65e9a0da2c",tooltip="Initializes ncurses."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CWindow::ErrorMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a93c5f62c3b8e5d3865b9dbcd3459a630",tooltip="Prints out an error message that varies depending on the error_text."];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CWindow::RenderScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#adaa430b483a91e433214ff10fde23b48",tooltip="While loop that refreshes and updates the screen."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CWindow::ChangeStatusCheck",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#aa3df983e285520ce0aa2efff7976ea26",tooltip="Interface for checking current status and decide what to do."];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CWindow::GetInputKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a9d4c119ae0f6a21fbd6962c72b61c4b5",tooltip="Reads a keypress from the user."];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CWindow::PrintContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a5249ff836d8d98ac10561fa1725e65fe",tooltip="Prints out all the contents of the buffer to the screen."];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CWindow::PrintStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCWindow.html#a6258a9240f205a20c14be1027ada08d4",tooltip="Prints out the whole status line to the screen."];
+}

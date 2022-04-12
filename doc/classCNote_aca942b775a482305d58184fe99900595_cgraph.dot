@@ -1,0 +1,10 @@
+digraph "CNote::SearchInCategory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CNote::SearchInCategory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Searches throught a category of notes that is being specified in arguments and searches for math of '..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CUtilities::GetDirContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCUtilities.html#a98a3394596f433a7bed6bc572dfb7071",tooltip="Iterates through all files in a folder and then returns those filenames."];
+}

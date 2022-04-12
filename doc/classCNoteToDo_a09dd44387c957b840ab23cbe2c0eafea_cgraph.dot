@@ -1,0 +1,30 @@
+digraph "CNoteToDo::EditNote"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CNoteToDo::EditNote",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Reads a note from a file and starts the editing loop. In the end saves changes."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CNoteToDo::PrintHelp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#af44201eea0361fb4a4e8d5ce005ee3de",tooltip="Prints out a manual."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CNoteToDo::RefreshNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#a2524f62bbf98d27bcd96fa4b3eeaca3a",tooltip="This is the main loop that handles input (by funtion) and then calls another fucntion to decide what ..."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CNote::GetInputChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a34b82fc095ddd76e651a3262167a444b",tooltip="Reads a char from stdin and puts it into current_keypress variable."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CNoteToDo::ProcessInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#a2b60d5795a5ba18a186c2e18162fb89e",tooltip="Decides what will be done based on input key and calls adiquite function."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CNoteToDo::AddRecord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#aecf6707c6ec35b73bd476fb0232df5ae",tooltip="Reads a line and add it as a new record to the vector of records in the right format."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CNote::GetInputLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a503cdc32ab502847c764e194bf53ee6d",tooltip="Reads a line from stdin and returns it."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CNoteToDo::DeleteRecord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#ab3dc55c7fac38fcf4482f414b0f912a5",tooltip="Deletes a record from the vector."];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CNoteToDo::MarkDone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#ae9f09439af804550cefe9508a132e91f",tooltip="Changes a letter in a record which marks a record done."];
+  Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CNote::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f4ada896501a9c6889104322dd20b4b",tooltip="Prints a line to stdout from the argument string."];
+  Node5 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CNoteToDo::ShowList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#af0ee797a0a76455ebbcb4a73bc038b20",tooltip="Prints content of the records vector in the right format."];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CNoteToDo::SaveNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html#a880bb1de938e1cbdfe4a4f95004da9bf",tooltip="Attempts to save content of the records vector into a file."];
+}

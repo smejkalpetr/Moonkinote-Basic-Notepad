@@ -1,0 +1,18 @@
+digraph "CMenu::SearchContent"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CMenu::SearchContent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Reads searched string and then goes throught all notes and searches for matches. Prints result."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CNote::SearchContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a76e5bcdb472b126fa9c785e468955491",tooltip="Reads what you are searching for. Searches throught all files and retruns all matches."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CNote::GetInputLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a503cdc32ab502847c764e194bf53ee6d",tooltip="Reads a line from stdin and returns it."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CNote::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f4ada896501a9c6889104322dd20b4b",tooltip="Prints a line to stdout from the argument string."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CNote::SearchInCategory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#aca942b775a482305d58184fe99900595",tooltip="Searches throught a category of notes that is being specified in arguments and searches for math of '..."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CUtilities::GetDirContent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCUtilities.html#a98a3394596f433a7bed6bc572dfb7071",tooltip="Iterates through all files in a folder and then returns those filenames."];
+}

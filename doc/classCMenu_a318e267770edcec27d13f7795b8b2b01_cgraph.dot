@@ -1,0 +1,14 @@
+digraph "CMenu::SearchTag"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CMenu::SearchTag",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="After reading the tag goes through dev_tags file and attpemts to find matches. Prints out the result."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CNote::SearchTag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f49a0c00d1e7773705ebc5d7ab59fee",tooltip="Searches through tag_dev file and attempts to find a category and note match."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CNote::GetInputLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a503cdc32ab502847c764e194bf53ee6d",tooltip="Reads a line from stdin and returns it."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CNote::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f4ada896501a9c6889104322dd20b4b",tooltip="Prints a line to stdout from the argument string."];
+}

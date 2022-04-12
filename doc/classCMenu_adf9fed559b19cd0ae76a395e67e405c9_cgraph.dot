@@ -1,0 +1,25 @@
+digraph "CMenu::ImportNote"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CMenu::ImportNote",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calls method on CNote and imports a text note after getting it name from the user."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CMenu::AddTags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCMenu.html#a9719c88900c130cc7f071d261c089bdb",tooltip="Reads a string from the user and the puts it into dev_tags file."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CMenu::GetInputLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCMenu.html#a5e94130334b846986299cfe8d773dfcb",tooltip="Prints out a message and reads until newline. Returns read string."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CMenu::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCMenu.html#af4b786b21df464cd12087782f7a552e3",tooltip="Prints the line in argument to stdout."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CUtilities::FileExists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCUtilities.html#a63f40487b633db992dfcb6e087d6a8d5",tooltip="Checks if a file (for example a note) exists."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CMenu::GetInputWord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCMenu.html#a60d2e9eb6c1af0f20e68c5810dec6bea",tooltip="Prints a message and then waits until newline. Only alfanumeral char are allowed and must be one word..."];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CNote::ImportNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#af3015a8780f55a8712253695ef11cb34",tooltip="Attempts to read a text file and if possible copies it into a note file and saves it."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CNote::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f4ada896501a9c6889104322dd20b4b",tooltip="Prints a line to stdout from the argument string."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

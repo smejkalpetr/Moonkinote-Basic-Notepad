@@ -1,0 +1,28 @@
+digraph "CNoteShopping::EditNote"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CNoteShopping::EditNote",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Loads a note from a file into a vector and then goes throught editing process. In the end saves chang..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CNoteShopping::PrintHelp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#a9e066e61ceba91257917f29e772823a9",tooltip="Prints out a manutal on how to work with the the note editing."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CNoteShopping::RefreshNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#ab653990e2ecf9dfc56fb5059bf394590",tooltip="Handles the input and decision what will be done."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CNote::GetInputChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a34b82fc095ddd76e651a3262167a444b",tooltip="Reads a char from stdin and puts it into current_keypress variable."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CNoteShopping::ProcessInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#ad7fb546005e70165f85f72924cedc4ea",tooltip="Decides what function will be called based on input key."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CNoteShopping::AddRecord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#a1ae0d786dd0122540d9111ec1c60cf58",tooltip="Adds a new records into the vector in the right format."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CNote::GetInputLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a503cdc32ab502847c764e194bf53ee6d",tooltip="Reads a line from stdin and returns it."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="CNoteShopping::DeleteRecord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#adce6f7a8e9a8517dfe73c71ca0bb6197",tooltip="Deletes a record from the vector of records."];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="CNote::PrintLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html#a3f4ada896501a9c6889104322dd20b4b",tooltip="Prints a line to stdout from the argument string."];
+  Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CNoteShopping::ShowList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#a8eac16e44e83cc7ae60148cee373507a",tooltip="Shows content of the records vector in the right format."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CNoteShopping::SaveNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html#a5f4825ab89af8ee802f09bd8a4438ad1",tooltip="Attempts to save content of the records vector into a note file."];
+}

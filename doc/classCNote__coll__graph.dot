@@ -1,0 +1,9 @@
+digraph "CNote"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CNote\n|# is_running\l# current_keypress\l# records\l|+ CNote()\l+ ~CNote()\l+ NewItem()\l+ EditNote()\l+ GenHTML()\l+ SearchTag()\l+ SearchContent()\l+ ExportTF()\l+ ImportNote()\l# RefreshNote()\l# ProcessInput()\l# AddRecord()\l# DeleteRecord()\l# ShowList()\l# PrintHelp()\l# SaveNote()\l# GetInputChar()\l# PrintLine()\l# GetInputLine()\l- SearchInCategory()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This class is a superclass for any type of note."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" #utility" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{CUtilities\n||+ CUtilities()\l+ ~CUtilities()\l+ FileExists()\l+ CreateFile()\l+ GetDirContent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCUtilities.html",tooltip="This class contains small utilities that help to work with files."];
+}

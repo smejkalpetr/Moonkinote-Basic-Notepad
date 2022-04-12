@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="CNote",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNote.html",tooltip="This class is a superclass for any type of note."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="CNoteShopping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteShopping.html",tooltip="Represent a type of note - shopping list - and its functoins. CNote subclass."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CNoteStd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteStd.html",tooltip="Represent a standard note. It's another type of note - subclass of CNote."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CNoteToDo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCNoteToDo.html",tooltip="Represent a ToDo list. A specific note type that is being a subclass of CNote."];
+}
