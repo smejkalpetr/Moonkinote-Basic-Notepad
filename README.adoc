@@ -1,14 +1,16 @@
+# Moonkinote - Basic Notepad
+
 This is the first project I have ever done - 6/2019. The code is not very
-clean or nice at all, but I thought I would still include this project here.
+clean or nice at all, but I thought I would still publish this project here.
 
 The point was to create a program that would use modules instead of all source
-code being in one file as well as stuff like polymorphism, working with files,
-generate documentation, etc.
+code being in one file as well as stuff like polymorphism, I/O streams and files,
+Makefile, documentation generation, etc.
 
 
+### Original description:
 
-Original description:
-
+----
 ===========================|| MOONKINOTE ||===========================
 | DESCRIPTION: Moonkinote is a system for keeping notes. This small  |
 | program offers creating notes of variable categories, exporting    |
@@ -27,3 +29,22 @@ Original description:
 | HOW TO USE THE PROGRAM - all this and much more you can find after |
 |                          launching the program and seeing help.    |
 ----------------------------------------------------------------------
+----
+
+Looking back...
+
+---
+
+### Example screenshots with description
+
+#### Program start-up & new note creation
+
+image::examples/screenshots/note_creation.png[alt=Note Creation, width=1180]
+
+Description about the screenshot above...
+
+#### Program start-up & new note creation
+
+image::examples/screenshots/note_creation.png[alt=Note Creation, width=1180]
+
+Description about the screenshot above...
