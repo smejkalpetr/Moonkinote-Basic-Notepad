@@ -31,7 +31,10 @@ Makefile, documentation generation, etc.
 ----------------------------------------------------------------------
 ----
 
-Looking back...
+Looking back, I see I got much better overall, especially at designing classes and organizing program structure (like using design patterns,
+good practices, etc.). Also the naming is not always perfect and some problems are solved in an unnecessary difficult way.
+
+As I have already said, this was my first project so it is expected not to be good (being actually far from good, hehe).
 
 ---
 
