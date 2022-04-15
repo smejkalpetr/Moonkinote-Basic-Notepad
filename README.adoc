@@ -5,7 +5,7 @@ clean or nice at all, but I thought I would still publish this project here.
 
 The point was to create a program that would use modules instead of all source
 code being in one file as well as stuff like polymorphism, I/O streams and files,
-Makefile, documentation generation, etc.
+Makefile, documentation generation, using library (nCurses), etc.
 
 
 ### Original description:
