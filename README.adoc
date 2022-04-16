@@ -1,11 +1,11 @@
 # Moonkinote - Basic Notepad
 
 This is the first project I have ever done - 6/2019. The code is not very
-clean or nice at all, but I thought I would still publish this project here.
+clean or nice at all, but I thought I would still publish the project here.
 
 The point was to create a program that would use modules instead of all source
 code being in one file as well as stuff like polymorphism, I/O streams and files,
-Makefile, documentation generation, using library (nCurses), etc.
+Makefile, documentation generation, library (nCurses), etc.
 
 
 ### Original description:
@@ -31,9 +31,9 @@ Makefile, documentation generation, using library (nCurses), etc.
 ----------------------------------------------------------------------
 ----
 
-Looking back, I see I got much better overall, especially at designing classes and organizing program structure (like using design patterns, good practices, etc.). Also the naming is not always perfect and some problems are solved in an unnecessary difficult way.
+Looking back, I see I've improved overall, especially at designing classes and organizing program structure (like using design patterns, good practices, etc.). Also the naming is not always perfect and some problems are solved in an unnecessary difficult way.
 
-As I have already said, this was my first project so it is expected not to be good (being actually far from good, hehe).
+As I have already said, this was my first project so it is expected not to be very good.
 
 ---
 
@@ -43,15 +43,14 @@ As I have already said, this was my first project so it is expected not to be go
 
 #### Program start-up
 
-After launching the program, you are greet with a interface where you use single char commands to navigate throughout the program.
+After launching the program, you are greet with an interface where you can use single char commands to navigate throughout the program.
 
 image::examples/screenshots/welcome_screen.png[alt=Welcome screen, width=1180]
 
 
 #### New note creation
 
-The screenshot below shows creating of a new note. To create a new note you have to provide its category (there are three categories - std, shopping, todo). Also when a new note is being created, you are able to add some tags that can be later used when searching for a specific note. You can find a note
-based on its content as well.
+The screenshot below shows creation of a new note. To create a new note you have to provide its category (there are three categories - std, shopping, todo). Also, when a new note is being created, you are able to add some tags that can be later used when searching for a specific note, however you can find a note based on its content as well.
 
 image::examples/screenshots/note_creation.png[alt=Note Creation, width=1180]
 
@@ -72,14 +71,18 @@ image::examples/screenshots/note_deletion.png[alt=Note Deletion, width=1180]
 
 #### TODO note
 
-TODO note is one of the three provided categories of notes. The notes help you manage your tasks by creating a list of them, in which you can tick off records that you have already done. Check out the screenshot below to see the interface yourself. Note: The shopping category is very similar except for a few small differences.
+TODO note is one of the three provided categories of notes. The todo notes help you manage your tasks by creating a list of them, where you can tick off records that you have already done. Check out the screenshot below to see the interface yourself. 
+
+Note: The shopping category is very similar except for a few minor differences.
 
 image::examples/screenshots/todo_note.png[alt=TODO Note, width=1180]
 
 
 #### Export note to .txt file
 
-You are also able to export your note to either .txt or to .html file. I'm going to show you the process and result of exporting to .txt. At first, you have to choose a note to be exported. That's done by providing its category and name. Then you have to specify the note's name after export. After that the note will be exported and kept in ./src/Exported/ (don't ask me why I choose this location, idk).
+You are able to export your note to either .txt or to .html file (works for all categories). I'm going to show you the process and result of exporting an std note to .txt. 
+
+At first, you have to choose a note to be exported. That's done by providing its category and name. Then you have to specify the note's name after export. After that the note will be exported and saved in ./src/Exported/ (don't ask me why I choose this location, idk).
 
 image::examples/screenshots/note_export.png[alt=Note export, width=1180]
 
